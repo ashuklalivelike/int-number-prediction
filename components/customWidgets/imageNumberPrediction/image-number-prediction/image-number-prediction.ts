@@ -62,7 +62,7 @@ class LLtntImageNumberPredictionOption extends LiveLikeNumberPrediction {
     const renderSubmitBtnText = () => {
       if (this.isExpired) {
         if (this.interaction) return "Expired - Answer submitted";
-        else return "Expired - No prediction submitted";
+        else return "Expired";
       } else {
         if (this.disabled) return "Submitted";
         else return "Submit";
@@ -73,7 +73,7 @@ class LLtntImageNumberPredictionOption extends LiveLikeNumberPrediction {
       <template kind="image-number-prediction">
         <livelike-widget-root class="custom-widget">
           <livelike-widget-header class="widget-header" slot="header">
-            <div class="quiz">Quiz</div>
+            <div class="quiz">QUIZ</div>
             <livelike-title class="custom-title"></livelike-title>
           </livelike-widget-header>
           <livelike-widget-body>

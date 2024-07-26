@@ -92,7 +92,7 @@ class LLtntTextPoll extends LiveLikePoll {
     const renderSubmitBtnText = () => {
       if (this.isExpired) {
         if (this.interaction) return "Expired - Answer submitted";
-        else return "Expired - No prediction submitted";
+        else return "Expired";
       } else {
         if (this.disabled) return "Submitted";
         else return "Submit";

@@ -30,7 +30,7 @@ ll-tnt-image-number-prediction livelike-footer .widget-button {
   text-align: center;
   color: var(--primary-text-timeline);
   font-family: var(--font);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -41,12 +41,11 @@ ll-tnt-image-number-prediction livelike-footer .widget-button {
   border-radius: 4px;
   text-transform: uppercase;
 }
-ll-tnt-image-number-prediction
-  livelike-footer
-  .widget-button.widget-expired:disabled {
-  background: transparent;
-}
-ll-tnt-image-number-prediction livelike-footer .widget-button:disabled {
+
+ll-tnt-image-number-prediction livelike-footer .widget-button:disabled,
+ll-tnt-image-number-prediction livelike-footer .widget-button.widget-expired {
   opacity: 0.5;
   cursor: not-allowed;
+  pointer-events: none;
+  font-size: 14px;
 }

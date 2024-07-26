@@ -63,19 +63,21 @@ class LLtntImageNumberPredictionOption extends LiveLikeOption {
     super.update();
     const inputElm = this.querySelector("input[type=number]");
 
-    const isAnyInputValueNotPresent =
-      Array.from(
-        inputElm.parentElement.parentElement.parentElement.querySelectorAll(
-          "input[type=number]"
-        )
-      ).filter((el: any) => !el.value).length !== 0;
+    if (!inputElm.disabled) {
+      const isAnyInputValueNotPresent =
+        Array.from(
+          inputElm.parentElement.parentElement.parentElement.querySelectorAll(
+            "input[type=number]"
+          )
+        ).filter((el: any) => !el.value).length !== 0;
 
-    const button =
-      inputElm.parentElement.parentElement.parentElement.parentElement.querySelector(
-        "button.widget-button"
-      );
+      const button =
+        inputElm.parentElement.parentElement.parentElement.parentElement.querySelector(
+          "button.widget-button"
+        );
 
-    button.disabled = isAnyInputValueNotPresent;
+      button.disabled = isAnyInputValueNotPresent;
+    }
 
     if (this.option && inputElm.disabled) {
       this.correct = this.option.correct_number === this.option.number;
