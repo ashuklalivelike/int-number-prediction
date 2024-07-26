@@ -1,0 +1,55 @@
+ll-tnt-image-prediction livelike-widget-body {
+  background: var(--primary-background-timeline);
+  display: flex;
+  flex-direction: column;
+}
+
+ll-tnt-image-prediction livelike-select {
+  padding: 16px;
+  display: flex;
+  column-gap: 10px;
+  border: 0.5px solid var(--senary-background-timeline);
+  border-top: none;
+  border-bottom: none;
+}
+
+ll-tnt-image-prediction livelike-image img {
+  height: 48px;
+  width: 48px;
+}
+
+ll-tnt-image-prediction livelike-footer {
+  padding-top: 16px;
+  overflow: hidden;
+  background: transparent;
+}
+
+ll-tnt-image-prediction livelike-footer .widget-button {
+  width: 100%;
+  text-align: center;
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: none;
+
+  border: 0;
+  background: var(--secondary-background-timeline);
+  padding: 10px 20px 12px;
+}
+ll-tnt-image-prediction livelike-footer .widget-button.widget-expired:disabled {
+  background: transparent;
+}
+ll-tnt-image-prediction livelike-footer .widget-button:disabled {
+  background: var(--disabled-background-timeline);
+  color: var(--disabled-text-timeline);
+  cursor: not-allowed;
+}
+ll-tnt-image-prediction
+  livelike-footer
+  .widget-button.option-selected:not(:disabled) {
+  background: var(--ternary-background-timeline);
+}

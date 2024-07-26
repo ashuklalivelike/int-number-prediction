@@ -1,0 +1,52 @@
+ll-tnt-image-number-prediction livelike-widget-body {
+  background: var(--primary-background-timeline);
+  display: flex;
+  flex-direction: column;
+}
+
+ll-tnt-image-number-prediction livelike-select {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border: 0.5px solid var(--senary-background-timeline);
+  border-top: none;
+  border-bottom: none;
+}
+
+/* ll-tnt-image-number-prediction livelike-image img {
+  height: 48px;
+  width: 48px;
+} */
+
+ll-tnt-image-number-prediction livelike-footer {
+  padding: 16px;
+  overflow: hidden;
+  background: transparent;
+}
+
+ll-tnt-image-number-prediction livelike-footer .widget-button {
+  width: max-content;
+  text-align: center;
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  border: 0;
+  background: #cc20cc;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+ll-tnt-image-number-prediction
+  livelike-footer
+  .widget-button.widget-expired:disabled {
+  background: transparent;
+}
+ll-tnt-image-number-prediction livelike-footer .widget-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

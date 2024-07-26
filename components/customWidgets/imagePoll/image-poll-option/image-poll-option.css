@@ -1,0 +1,46 @@
+ll-tnt-image-poll-option[selected] {
+  box-shadow: 0 0 0 1px var(--ternary-background-timeline) inset;
+  background-color: var(--black);
+  cursor: default;
+}
+
+ll-tnt-image-poll-option {
+  background: var(--black);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px transparent inset;
+  padding: 0 16px 4px 10px;
+  overflow: hidden;
+  display: flex;
+  column-gap: 6px;
+  cursor: pointer;
+}
+ll-tnt-image-poll-option livelike-image img {
+  height: 48px;
+  width: 48px;
+}
+ll-tnt-image-poll-option .livelike-voting-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+}
+
+ll-tnt-image-poll-option .livelike-voting-image-container livelike-description {
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0;
+}
+
+ll-tnt-image-poll-option livelike-percentage {
+  display: none;
+}
+
+ll-tnt-image-poll-option[disabled] {
+  cursor: not-allowed;
+}

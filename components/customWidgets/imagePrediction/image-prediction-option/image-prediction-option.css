@@ -1,0 +1,51 @@
+ll-tnt-image-prediction-option[selected] {
+  box-shadow: 0 0 0 1px var(--ternary-background-timeline) inset;
+  /* background-color: var(--black); */
+  cursor: default;
+}
+
+ll-tnt-image-prediction-option {
+  width: 50%;
+  background: var(--black);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px transparent inset;
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+  background: #cad2da;
+  border-radius: 10px;
+  color: #000;
+}
+ll-tnt-image-prediction-option .livelike-voting-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column-reverse;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+ll-tnt-image-prediction-option
+  .livelike-voting-image-container
+  livelike-description {
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 0;
+}
+
+ll-tnt-image-prediction-option livelike-percentage {
+  display: none;
+}
+
+ll-tnt-image-prediction-option[disabled] {
+  cursor: not-allowed;
+}

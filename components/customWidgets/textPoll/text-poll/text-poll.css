@@ -1,0 +1,114 @@
+ll-tnt-text-poll livelike-widget-body {
+  background: var(--primary-background-timeline);
+  display: flex;
+  flex-direction: column;
+}
+
+ll-tnt-text-poll livelike-widget-body[disabled] {
+  border-radius: 0 0 8px 8px;
+  border: 0.5px solid var(--senary-background-timeline);
+  border-top: none;
+}
+
+ll-tnt-text-poll livelike-select {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  border: 0.5px solid var(--senary-background-timeline);
+  border-top: none;
+  border-bottom: none;
+}
+
+ll-tnt-text-poll livelike-select[disabled] {
+  border: none;
+}
+
+ll-tnt-text-poll livelike-option {
+  background: var(--black);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px transparent inset;
+  border: none;
+  padding: 0 16px 4px 10px;
+  overflow: hidden;
+}
+ll-tnt-text-poll livelike-option[selected] {
+  box-shadow: 0 0 0 1px var(--ternary-background-timeline) inset;
+}
+
+ll-tnt-text-poll livelike-option .livelike-voting-text-container {
+  height: 48px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2px;
+}
+ll-tnt-text-poll
+  livelike-option
+  .livelike-voting-text-container
+  livelike-description {
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0;
+}
+ll-tnt-text-poll
+  livelike-option
+  .livelike-voting-text-container
+  livelike-percentage {
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0;
+}
+ll-tnt-text-poll livelike-option livelike-progress {
+  height: 4px;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  background: var(--senary-background-timeline);
+  margin: 0;
+  border-radius: 0 0 0 0;
+}
+
+ll-tnt-text-poll livelike-option livelike-progress[selected] {
+  background: var(--ternary-background-timeline);
+}
+
+ll-tnt-text-poll livelike-footer {
+  overflow: hidden;
+  background: transparent;
+}
+
+ll-tnt-text-poll livelike-footer .widget-button {
+  width: 100%;
+  text-align: center;
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: none;
+
+  border: 0;
+  background: var(--secondary-background-timeline);
+  padding: 10px 20px 12px;
+}
+ll-tnt-text-poll livelike-footer .widget-button.widget-expired:disabled {
+  background: transparent;
+  padding: 0 20px 16px;
+}
+ll-tnt-text-poll livelike-footer .widget-button.option-selected:not(:disabled) {
+  background: var(--ternary-background-timeline);
+}

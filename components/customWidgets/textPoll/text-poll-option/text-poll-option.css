@@ -1,0 +1,40 @@
+ll-tnt-text-poll-option[selected] {
+  box-shadow: 0 0 0 1px var(--ternary-background-timeline) inset;
+  background-color: var(--black);
+  cursor: default;
+}
+
+ll-tnt-text-poll-option {
+  background: var(--black);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px transparent inset;
+  padding: 0 16px 4px 10px;
+  overflow: hidden;
+}
+ll-tnt-text-poll-option .livelike-voting-text-container {
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+}
+
+ll-tnt-text-poll-option .livelike-voting-text-container livelike-description {
+  color: var(--primary-text-timeline);
+  font-family: var(--font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0;
+}
+
+ll-tnt-text-poll-option livelike-percentage {
+  display: none;
+}
+
+ll-tnt-text-poll-option[disabled] {
+  cursor: not-allowed;
+}
